@@ -652,7 +652,7 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* первый инпут  ИМЯ */
-.contacts-form-wrap {}
+.contacts-form-wrap {margin-bottom: 8px;}
 
 
 .form-user-label {
@@ -675,11 +675,12 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.form-user-icon-name {
+.form-user-icon-wrap {
   position: relative;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .form-user-input {
@@ -691,9 +692,29 @@ border: none;
   outline: none;
 
 }
-.form-user-icon-name:focus-within {
+.form-user-icon-wrap:focus-within {
   border: 1px solid #4d5ae5;
 }
-.form-user-icon-name:focus-within .form-user-icon {
+.form-user-icon-wrap:focus-within .form-user-icon {
   fill: #4d5ae5;
+}
+.form-user-comment {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 120px;
+    outline: none;
+    resize: none;
+    padding: 8px 16px;
+}
+.form-user-comment::placeholder {
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.comments-form-wrap:focus-within .form-user-comment {
+  border: 1px solid #4d5ae5;
 }
