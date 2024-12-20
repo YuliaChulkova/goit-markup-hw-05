@@ -429,12 +429,12 @@
       <div class="footer-subscribe">
         <p class="footer-social-text">Subscribe</p>
         <form class="footer-form-subscribe" name="footer-form-subscribe">
-          <label for="Subscribe-label">
+          <label for="subscribe-label">
             <input 
             class="subscribe-input"
             type="email" 
-            id="Subscribe-email" 
-            name="Subscribe-email" 
+            id="subscribe-email" 
+            name="subscribe-email" 
             placeholder="E-mail">
           </label>
           <button class="foot-btn-subscribe" type="submit"> Subscribe <svg class="subcribe-icon" width="24" height="24">
@@ -446,9 +446,10 @@
       </div>
       </div>
     </footer>
-    <!-- MODEL-FORM -->
-    <div class="backdrop ">
+    <!-- MODEL-FORM is-open-->
+    <div class="backdrop is-open"> 
       <div class="modal">
+        <!-- CLOSE-BUTTON -->
         <button class="modal-close-btn" type="button">
           <svg class="model-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
@@ -501,12 +502,13 @@
           <!-- CHECKBOX -->
 
           <div class="checkbox">
-            <input class="checkbox-input visually-hidden" type="user-checkbox" name="user-checkbox" id="user-checkbox"  value="true" required>
+            <input class="checkbox-input visually-hidden" type="checkbox" name="user-checkbox" id="user-checkbox"  value="true" required>
             <label class="checkbox-label" for="user-checkbox">
               <span class="custom-checkbox"><svg class="checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-chek"></use>
               </svg></span>I accept the terms and conditions of the <a class="checkbox-link" href="#">Privacy Policy</a></label>
           </div>
+          <!-- BUTTON-SUBMIT -->
           <button class="form-button-submit" type="submit">Send</button>
         </form>
        
